@@ -3,6 +3,7 @@ from teacher import Teacher
 from logging_decorator import logging_decorator
 from double_decorator import double_decorator
 from string_check_decorator import string_check_decorator
+import numpy as np
 
 @double_decorator
 @logging_decorator
@@ -28,6 +29,13 @@ def main():
     print_hello_world()
     
     add(1, 2)
+
+
+
+    array_2d = np.random.randint(1, 11, size=(10, 10))
+    print(array_2d)
+    
+
 
 if __name__ == "__main__":
     main()
