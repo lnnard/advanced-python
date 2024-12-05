@@ -7,18 +7,13 @@ from double_decorator import double_decorator
 def print_hello_world():
     print("Hello World!")
 
-
 def main():
     student = Student("Jane", "Doe", 20, 12345)
     teacher = Teacher("Jack", "Doe", 40, 54321)
-
+    
     teacher.grade_student(student)
 
-
     print_hello_world()
-
-
-
 
 if __name__ == "__main__":
     main()
