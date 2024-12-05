@@ -1,3 +1,4 @@
+import random
 from person import Person
 
 class Teacher(Person):
@@ -8,3 +9,6 @@ class Teacher(Person):
     def print_teacher(self):
         self.print_person()
         print(f"Teacher ID: {self.teacher_id}")
+
+    def grade_student(self, student):
+        student.grade = random.randint(1, 10)
